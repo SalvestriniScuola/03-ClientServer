@@ -22,15 +22,15 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         String text;
         do {
-            text = scan.next();
+            text = scan.nextLine();
             
-            if(text == "exit")
+            if(text.equals("exit"))
                 continue;
 
             out.println(text);
             System.out.println(in.readLine());
 
-        } while(text != "exit");
+        } while(!text.equals("exit"));
         
         out.println("!");
 

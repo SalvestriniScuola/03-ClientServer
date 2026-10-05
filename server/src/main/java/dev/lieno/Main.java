@@ -29,9 +29,9 @@ public class Main {
         do {
             text = in.readLine();
 
-            if(text != "!") 
+            if(!text.equals("!")) 
                 out.println(text.toUpperCase());
-        } while(text != "!");
+        } while(!text.equals("!"));
         
 
         System.out.println("Client disconnected.");
